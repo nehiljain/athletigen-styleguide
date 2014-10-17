@@ -1,0 +1,37 @@
+<form:form name="loginForm" modelAttribute="loginForm" method="post" cssClass="to-be-validated" action="${tlibfn:rewrite(flowExecutionUrl, pageContext.request, settings['webapp_path'])}">
+  <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" />
+  
+  <div class="form-input wide tiny-vspace">
+    <input name="username" id="username" type="text"
+      tabindex="1"
+      value="${loginForm.username}"
+      placeholder="Email" 
+      required="true"
+      email="true"
+      autocomplete="on" class="form-control ${status.error ? 'small error' : ''}" />
+        
+    <form:errors path="username" element="div" cssClass="small error" />
+  </div>
+
+  <div class="form-input wide tiny-vspace">
+    <input name="password" id="password" type="password"
+      tabindex="2"
+        class="form-control ${status.error ? 'small error' : ''}" 
+        required="true"
+        placeholder="Password"
+        autocomplete="off" />
+    <form:errors path="password" element="div" cssClass="small error" />
+  </div>
+  
+   <div class="row form-button">
+    <button name="_eventId_submit" type="submit" class="btn btn-block green square small-vspace"> 
+      <h6 class="white-text small">
+        LOG IN
+      </h6>
+    </button>
+  </div>
+  <div class="form-text text-center">
+    <span class="small"><strong><a href="${settings['webapp_path']}/account/settings/password/forgot">Forgot Password?</a></strong> 
+    or <strong><a href="${settings['webapp_path']}/account/new" class="js-direct-to-no">Sign Up</a></strong></span>
+  </div>
+</form:form>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="choose" sketch:type="MSArtboardGroup" transform="translate(-490.000000, -436.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(352.000000, 229.000000)">
+                <g id="studies-2" transform="translate(139.000000, 208.000000)" sketch:type="MSShapeGroup">
+                    <g id="checked">
+                        <ellipse id="Oval-549" fill="#2BAB6E" cx="17.1977401" cy="17.1583333" rx="17.4293138" ry="17.4496329"></ellipse>
+                        <path d="M14.9742248,26.32307 L14.8868335,26.4104613 L6.53805592,18.0616837 L9.9212626,14.6784771 L14.9086813,19.6658958 L24.9709101,9.60366704 L28.3541168,12.9868737 L14.9960726,26.3449179 L14.9742248,26.32307 Z" id="Rectangle-379" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

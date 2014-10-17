@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="141px" height="141px" viewBox="0 0 141 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>coaches 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="69.770349" cy="70.5118352" r="70.1062204"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="role-select" sketch:type="MSArtboardGroup" transform="translate(-650.000000, -351.000000)">
+            <g id="coach-2" sketch:type="MSLayerGroup" transform="translate(570.000000, 300.000000)">
+                <g id="coaches-2" transform="translate(81.000000, 51.000000)">
+                    <mask id="mask-2" sketch:name="Oval 9" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval-9" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <path d="M52.4769686,58.9178594 C45.4561354,66.7152846 46.3133747,78.9336525 54.3915937,86.2073135 C61.5000477,92.6077942 71.819818,93.0295045 78.9811579,87.7288054 C79.4777048,87.3607614 79.8804142,87.0225255 79.9059944,87.0079594 C89.8784092,80.3416485 104.727135,92.5654973 107.890592,95.3492173 L108.198645,95.6265895 C108.369021,95.7799965 108.841736,95.5318648 109.25455,95.0733881 L113.77681,90.0509094 C114.189625,89.5924328 114.139166,88.8732331 113.664179,88.445553 L92.008391,68.9465941 L88.878631,72.4225447 L85.0064553,68.9360221 L88.1362153,65.4600714 L79.817061,57.9694712 C71.7380942,50.6966408 59.4978018,51.1204342 52.4769686,58.9178594 L52.4769686,58.9178594 Z" id="Shape" fill="#2BAB6E" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M-6.15399828,39.6180291 C2.45875003,59.2622951 41.4593678,72.1495096 52.154468,61.4540456 C62.8495682,50.7585815 40.2965681,30.0286214 47.8935367,-5.1467375" id="Path-148" stroke="#2BAB6E" stroke-width="4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

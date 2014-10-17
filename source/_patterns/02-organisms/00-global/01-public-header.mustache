@@ -1,0 +1,84 @@
+<div class="public-header">
+  <header class="site-header">
+    <div class="header-left-side">
+      <section class="site-logo">
+        <a href="${settings['webapp_path']}/home"> <img
+          src="../../images/logos/logo-beta.svg"
+          width="270" />
+        </a>
+      </section>
+      <nav>
+        <ul class="hidden-xs">
+          <li><a href="${settings['webapp_path']}/about-us">
+              <h6>About Us</h6> </a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right-side">
+      <div class="triangle"></div>
+      <c:if test="${userInfo eq null}">
+        <ul class="hidden-xs">
+          <li class="header-only-login"><a
+            href="${settings['webapp_path']}/secure/landing"> 
+              <h6 class="white-text"><img
+              class="login-lock hidden-xs"
+              src="../../images/small-semantic-icons/lock-white.svg" />LOG IN</h6>
+          </a></li>
+          <li class="header-only-login"><a
+            href="${settings['webapp_path']}/account/new" class="js-direct-to-no"> <h6 class="white-text">SIGN UP</h6> </a>
+          </li>
+        </ul>
+        <div class="visible-xs">
+          <div class="btn-group">
+            <button type="button"
+              class="btn dropdown-toggle white-text"
+              data-toggle="dropdown">
+              <span data-bind="label"><i class="entypo-menu"></i></span>
+            </button>
+            <ul class="dropdown-menu skinny" role="menu">
+              <li><a href="${settings['webapp_path']}/about-us">About Us</a></li>
+              <li class="header-only-login"><a
+                href="${settings['webapp_path']}/secure/landing">
+                Log In
+              </a></li>
+              <li class="header-only-login"><a
+                href="${settings['webapp_path']}/account/new" class="js-direct-to-no"> Sign Up </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </c:if>
+      <c:if test="${userInfo ne null}">
+        <ul class="hidden-xs">
+          <li class="header-only-login"><a
+            href="${settings['webapp_path']}/secure/landing"><h6 class="text-white"> <img
+              class="login-lock hidden-xs"
+              src="../../images/small-semantic-icons/lock-white.svg" />DASHBOARD</h6>
+          </a></li>
+          <li class="header-only-login"><a
+            href="${settings['webapp_path']}/account/logout"><h6 class="text-white"> LOG
+              OUT </h6></a></li>
+        </ul>
+        <div class="visible-xs">
+          <div class="btn-group">
+            <button type="button"
+              class="btn dropdown-toggle white-text"
+              data-toggle="dropdown">
+              <span data-bind="label"><i class="entypo-menu"></i></span>
+            </button>
+            <ul class="dropdown-menu skinny" role="menu">
+              <li><a href="${settings['webapp_path']}/about-us">About Us</a></li>
+              <li class="header-only-login"><a
+                href="${settings['webapp_path']}/secure/landing">Dashboard
+              </a></li>
+              <li class="header-only-login"><a
+                href="${settings['webapp_path']}/account/logout"> Log
+                  Out 
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </c:if>
+    </div>
+  </header>
+</div>

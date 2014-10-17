@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="154px" height="155px" viewBox="0 0 154 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>athletes 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="76.7578865" cy="76.5344254" r="76.5691522"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="how-it-works" sketch:type="MSArtboardGroup" transform="translate(-1035.000000, -473.000000)">
+            <g id="Register-and-Get-Rep-+-Fill-in-your-email-a-3" sketch:type="MSLayerGroup" transform="translate(949.000000, 474.000000)">
+                <g id="athletes-3" transform="translate(86.000000, 0.000000)">
+                    <mask id="mask-2" sketch:name="Oval 8" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval-8" fill="#2BAB6E" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <path d="M28.3962397,101.872973 L124.60376,101.872973 L124.60376,114.183836 L28.3962397,114.183836 L28.3962397,101.872973 Z M40.4221798,77.251246 L52.4481198,77.251246 L52.4481198,95.7175411 L40.4221798,95.7175411 L40.4221798,77.251246 Z M58.4610899,52.6295193 L70.48703,52.6295193 L70.48703,95.7175411 L58.4610899,95.7175411 L58.4610899,52.6295193 Z M76.5,71.0958144 L88.5259401,71.0958144 L88.5259401,95.7175411 L76.5,95.7175411 L76.5,71.0958144 Z M94.5389101,34.1632243 L106.56485,34.1632243 L106.56485,95.7175411 L94.5389101,95.7175411 L94.5389101,34.1632243 Z" id="profile-3" fill="#F6F6F6" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <rect id="Rectangle-66" opacity="0.15" fill="#62768D" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="-13.273682" y="0.710616616" width="89.8346678" height="164.82063"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

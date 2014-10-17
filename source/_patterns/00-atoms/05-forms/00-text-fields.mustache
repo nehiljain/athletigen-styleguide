@@ -1,0 +1,35 @@
+<fieldset>
+<form:form name="loginForm" modelAttribute="loginForm" method="post" cssClass="to-be-validated" action="${tlibfn:rewrite(flowExecutionUrl, pageContext.request, settings['webapp_path'])}">
+      <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" />
+      
+      <spring:hasBindErrors name="loginForm">
+        <form:errors element="div" cssClass="small error form-error tiny-vspace" />
+      </spring:hasBindErrors> 
+
+      <div class="form-input wide tiny-vspace">
+        <spring:bind path="username">
+          <input name="username" id="username" type="text"
+            tabindex="1"
+            value="Email"
+            placeholder="Email" 
+            required="true"
+            email="true"
+            autocomplete="on" class="form-control ${status.error ? 'small error' : ''}" />
+            
+         </spring:bind>
+        <form:errors path="username" element="div" cssClass="small error" />
+      </div>
+
+      <div class="form-input wide tiny-vspace">
+        <spring:bind path="password">
+            <input name="password" id="password" type="password"
+              tabindex="2"
+                class="form-control ${status.error ? 'small error' : ''}" 
+                required="true"
+                placeholder="Password"
+                autocomplete="off" />
+      </spring:bind>
+        <form:errors path="password" element="div" cssClass="small error" />
+      </div>
+  </form:form>
+</fieldset>

@@ -1,0 +1,51 @@
+
+<div class="private-header">
+  <header class="site-header">
+    <div class="header-left-side">
+      <section class="site-logo">
+        <a href="${settings['webapp_path']}/home">
+          <img src="../../images/logos/logo-beta-white.svg" />
+        </a>
+      </section>
+    </div>
+    <!-- We should hide the navbar incase this header is used on public page (23andMe flow) -->
+    <c:if test="${userInfo ne null}" >
+      <div class="header-right-side">
+        <ul class="hidden-xs">
+          <li class="header-only-login">
+            <div class="btn-group">
+              <a class="name" href="${settings['webapp_path']}/secure/landing" data-bind="label" data-toggle="dropdown">
+                 <img class="login-lock hidden-xs" src="../../images/small-semantic-icons/user.svg"/> ${userInfo.username}
+              </a>
+              <ul class="dropdown-menu skinny" role="menu">
+                <li><a href="${settings['webapp_path']}/account/settings/password/forgot">Change Password</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-only-login">
+            <img class="login-lock hidden-xs" src="../../images/small-semantic-icons/logout.svg"/>
+            <a href="${settings['webapp_path']}/account/logout">
+              Logout
+            </a>
+          </li>             
+        </ul>
+        <div class="visible-xs">
+           <div class="btn-group">
+             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+               <span data-bind="label white-text"><i class="entypo-menu white-text"></i></span>
+             </button>
+             <ul class="dropdown-menu skinny" role="menu">
+               <li><a href="${settings['webapp_path']}/secure/landing">Athletics</a></li>
+               <li><a href="${settings['webapp_path']}/account/settings/password/forgot">Change Password</a></li>
+               <li class="header-only-login">
+                 <a href="${settings['webapp_path']}/account/logout">
+                   Logout
+                 </a>
+               </li>
+             </ul>
+           </div>
+        </div>
+      </div>
+    </c:if>
+  </header>
+</div>

@@ -1,0 +1,83 @@
+ <form:form  method="post" name="signupForm" modelAttribute="signupForm" cssClass="to-be-validated"  action="${tlibfn:rewrite(flowExecutionUrl, pageContext.request, settings['webapp_path'])}">
+    <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" /> 
+    
+    <spring:hasBindErrors name="signupForm">
+    <form:errors element="div" cssClass="small error form-error" />
+  </spring:hasBindErrors>
+
+    <div class="form-input wide">
+       <spring:bind path="emailAddress">
+       <input type="text" 
+          tabindex="1"
+            class="form-control ${status.error ? 'small error' : ''}" 
+            name="emailAddress" 
+            id="emailAddress" 
+            placeholder="Email" 
+            autocomplete="on" 
+            email="true"
+            required="true"
+            value="${signupForm.emailAddress}" />
+</spring:bind>
+
+      <form:errors path="emailAddress" element="div" cssClass="small error" />
+    </div>
+
+    <div class="form-input wide">
+      <spring:bind path="password">
+       <input type="password" 
+        tabindex="2"
+          class="form-control ${status.error ? 'small error' : ''}" 
+          name="password" 
+          required="true"
+          id="password"   
+          required="true"
+          placeholder="Password (minimum 6 characters)"
+          value="${signupForm.password}"
+          data-validate="required" 
+          autocomplete="off" />
+      </spring:bind>
+                
+    <form:errors path="password" element="div" cssClass="small error" /> 
+    </div>
+
+    <div class="form-input wide tiny-vspace">
+      <spring:bind path="passwordConfirmation">
+        <input type="password" 
+          tabindex="3"
+            class="form-control ${status.error ? 'small error' : ''}" 
+            required="true"
+            name="passwordConfirmation" 
+            id="passwordConfirmation"   
+            required="true"
+            placeholder="Confirm your password" 
+            value="${signupForm.passwordConfirmation}"
+            data-validate="required"
+            autocomplete="off" />
+      </spring:bind>
+      
+      <form:errors path="passwordConfirmation" element="div" cssClass="small error" />
+    </div>
+    
+    <div class="row">
+      <p class="small text-center form-text">
+        By clicking "Sign Up", you confirm that you accept our 
+        <strong><a class="no-underline" target="_blank" href="${settings['webapp_path']}/legal/privacy">
+          Privacy Policy
+        </a></strong>
+       and 
+        <strong><a class="no-underline" target="_blank" href="${settings['webapp_path']}/legal/terms">
+          Terms of Service</a></strong>.
+      </p>
+    </div>
+    <div class="row form-button tiny-vspace">
+      <button name="_eventId_submit" type="submit" class="btn btn-block green square">
+        <h6 class="white-text small">
+          SIGN UP
+        </h6>
+      </button>
+    </div>
+    <div class="text-center">
+        <span class="form-option small">or <strong><a href="${settings['webapp_path']}/secure/landing">Log In</a></strong></span>
+    </div>
+
+  </form:form>

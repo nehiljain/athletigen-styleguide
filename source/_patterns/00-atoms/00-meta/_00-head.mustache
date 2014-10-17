@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}">
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../../css/font-icons/entypo/css/entypo.css?{{ cacheBuster }}" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/all-global.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/public.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/private.css?{{ cacheBuster }}" media="all" />
+<script>
+  centerElements(void 0);setInterval(centerElements,33);function centerElements(b){b=document.getElementsByClassName("js-vertical-center-child");for(var d=[],e=[],c=void 0,a=0;a<b.length;a++){d[a]=b[a].offsetHeight;for(c=b[a].parentNode;void 0==c||!centHasClass(c,"js-vertical-center-par");)c=c.parentNode;e[a]=c.offsetHeight}for(a=0;a<b.length;a++)b[a].style.marginTop=2.5*Math.floor((e[a]/2-d[a]/2)/2.5)+"px"}
+  function centHasClass(b,d){var e=" "+d+" ";return-1<(" "+b.className+" ").replace(/[\t\r\n\f]/g," ").indexOf(e)};
+</script>
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{% pattern-lab-head %}
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="{{ bodyClass }}">	
+		

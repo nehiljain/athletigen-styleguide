@@ -1,0 +1,84 @@
+&lt;div class=&quot;public-header&quot;&gt;
+  &lt;header class=&quot;site-header&quot;&gt;
+    &lt;div class=&quot;header-left-side&quot;&gt;
+      &lt;section class=&quot;site-logo&quot;&gt;
+        &lt;a href=&quot;${settings['webapp_path']}/home&quot;&gt; &lt;img
+          src=&quot;../../images/logos/logo-beta.svg&quot;
+          width=&quot;270&quot; /&gt;
+        &lt;/a&gt;
+      &lt;/section&gt;
+      &lt;nav&gt;
+        &lt;ul class=&quot;hidden-xs&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;${settings['webapp_path']}/about-us&quot;&gt;
+              &lt;h6&gt;About Us&lt;/h6&gt; &lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;header-right-side&quot;&gt;
+      &lt;div class=&quot;triangle&quot;&gt;&lt;/div&gt;
+      &lt;c:if test=&quot;${userInfo eq null}&quot;&gt;
+        &lt;ul class=&quot;hidden-xs&quot;&gt;
+          &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+            href=&quot;${settings['webapp_path']}/secure/landing&quot;&gt; 
+              &lt;h6 class=&quot;white-text&quot;&gt;&lt;img
+              class=&quot;login-lock hidden-xs&quot;
+              src=&quot;../../images/small-semantic-icons/lock-white.svg&quot; /&gt;LOG IN&lt;/h6&gt;
+          &lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+            href=&quot;${settings['webapp_path']}/account/new&quot; class=&quot;js-direct-to-no&quot;&gt; &lt;h6 class=&quot;white-text&quot;&gt;SIGN UP&lt;/h6&gt; &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;visible-xs&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button type=&quot;button&quot;
+              class=&quot;btn dropdown-toggle white-text&quot;
+              data-toggle=&quot;dropdown&quot;&gt;
+              &lt;span data-bind=&quot;label&quot;&gt;&lt;i class=&quot;entypo-menu&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu skinny&quot; role=&quot;menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;${settings['webapp_path']}/about-us&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+                href=&quot;${settings['webapp_path']}/secure/landing&quot;&gt;
+                Log In
+              &lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+                href=&quot;${settings['webapp_path']}/account/new&quot; class=&quot;js-direct-to-no&quot;&gt; Sign Up &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/c:if&gt;
+      &lt;c:if test=&quot;${userInfo ne null}&quot;&gt;
+        &lt;ul class=&quot;hidden-xs&quot;&gt;
+          &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+            href=&quot;${settings['webapp_path']}/secure/landing&quot;&gt;&lt;h6 class=&quot;text-white&quot;&gt; &lt;img
+              class=&quot;login-lock hidden-xs&quot;
+              src=&quot;../../images/small-semantic-icons/lock-white.svg&quot; /&gt;DASHBOARD&lt;/h6&gt;
+          &lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+            href=&quot;${settings['webapp_path']}/account/logout&quot;&gt;&lt;h6 class=&quot;text-white&quot;&gt; LOG
+              OUT &lt;/h6&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;visible-xs&quot;&gt;
+          &lt;div class=&quot;btn-group&quot;&gt;
+            &lt;button type=&quot;button&quot;
+              class=&quot;btn dropdown-toggle white-text&quot;
+              data-toggle=&quot;dropdown&quot;&gt;
+              &lt;span data-bind=&quot;label&quot;&gt;&lt;i class=&quot;entypo-menu&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;ul class=&quot;dropdown-menu skinny&quot; role=&quot;menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;${settings['webapp_path']}/about-us&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+                href=&quot;${settings['webapp_path']}/secure/landing&quot;&gt;Dashboard
+              &lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;header-only-login&quot;&gt;&lt;a
+                href=&quot;${settings['webapp_path']}/account/logout&quot;&gt; Log
+                  Out 
+              &lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/c:if&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;

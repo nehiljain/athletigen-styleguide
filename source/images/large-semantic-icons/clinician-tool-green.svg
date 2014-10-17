@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="141px" height="142px" viewBox="0 0 141 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>clinician 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="69.770349" cy="70.5118352" r="70.1062204"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="role-select" sketch:type="MSArtboardGroup" transform="translate(-991.000000, -351.000000)">
+            <g id="clinician-3" sketch:type="MSLayerGroup" transform="translate(914.000000, 300.000000)">
+                <g id="clinician-2" transform="translate(78.000000, 51.247070)">
+                    <mask id="mask-2" sketch:name="Oval 9" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval-9" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <g id="Oval-64-+-Path-146-+-Path-146" mask="url(#mask-2)" sketch:type="MSShapeGroup">
+                        <g transform="translate(69.279285, 68.754835) rotate(31.000000) translate(-69.279285, -68.754835) translate(30.279285, 25.754835)">
+                            <ellipse id="Oval-64" stroke="none" fill="#2BAB6E" fill-rule="evenodd" cx="10.9506471" cy="53.2932188" rx="10.7860838" ry="10.7416966"></ellipse>
+                            <path d="M12.0226006,60.068947 C12.0226006,60.068947 11.7255717,86.4272103 35.7826889,86.3612306 C59.8398061,86.2952509 59.8398049,60.3388979 59.8398049,60.3388979 L60.7102447,44.0336087" id="Path-146" stroke="#2BAB6E" stroke-width="4" fill="none"></path>
+                            <path d="M48.9865621,4.84624592 C48.9865621,4.84624592 41.0963568,4.45525497 41.0963568,14.9857413 C41.0963568,25.5162276 48.0777078,43.9253026 59.6248096,44.1041249 C71.1719114,44.2829471 77.9694289,26.6745408 77.9694296,15.7086358 C77.9694304,4.74273084 71.1719125,4.74273084 71.1719125,4.74273084" id="Path-146" stroke="#2BAB6E" stroke-width="4" fill="none"></path>
+                            <circle id="Oval-67" stroke="none" fill="#2BAB6E" fill-rule="evenodd" cx="47.9319771" cy="4.5" r="4"></circle>
+                            <circle id="Oval-68" stroke="none" fill="#2BAB6E" fill-rule="evenodd" cx="69.1956277" cy="4.04125465" r="4"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
