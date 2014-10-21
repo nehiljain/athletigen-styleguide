@@ -4,11 +4,13 @@
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="../../css/font-icons/entypo/css/entypo.css?1413908755" media="all" />
-		<link rel="stylesheet" href="../../css/style.css?1413908755" media="all" />
-    <link rel="stylesheet" href="../../css/all-global.css?1413908755" media="all" />
-    <link rel="stylesheet" href="../../css/public.css?1413908755" media="all" />
-    <link rel="stylesheet" href="../../css/private.css?1413908755" media="all" />
+		<link rel="stylesheet" href="../../css/font-icons/entypo/css/entypo.css?1413918694" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1413918694" media="all" />
+    <link rel="stylesheet" href="../../css/all-global.css?1413918694" media="all" />
+    <link rel="stylesheet" href="../../css/public.css?1413918694" media="all" />
+    <link rel="stylesheet" href="../../css/private.css?1413918694" media="all" />
+    <script src="../../js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="../../js/vendor/bootstrap.min.js"></script>
 <script>
   centerElements(void 0);setInterval(centerElements,33);function centerElements(b){b=document.getElementsByClassName("js-vertical-center-child");for(var d=[],e=[],c=void 0,a=0;a<b.length;a++){d[a]=b[a].offsetHeight;for(c=b[a].parentNode;void 0==c||!centHasClass(c,"js-vertical-center-par");)c=c.parentNode;e[a]=c.offsetHeight}for(a=0;a<b.length;a++)b[a].style.marginTop=2.5*Math.floor((e[a]/2-d[a]/2)/2.5)+"px"}
   function centHasClass(b,d){var e=" "+d+" ";return-1<(" "+b.className+" ").replace(/[\t\r\n\f]/g," ").indexOf(e)};
@@ -21,8 +23,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1413908755" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1413908755" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1413918694" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1413918694" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -1046,6 +1048,240 @@
 							</div>
 						</div>
 					</div>
+					<div id="molecules-help" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-modals-00-help/01-molecules-03-modals-00-help.html" class="patternLink" data-patternpartial="molecules-help">Help</a></h2>
+						<div class="sg-pattern-body">
+							<i class="entypo-help-circled question-clickable js-question-help" data-toggle="modal" data-target="#js-performance-scores-help"></i>
+
+<div class="modal fade" id="js-performance-scores-help" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span class="modal-span-cross header-font" aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h5 class="modal-title paragraph-font light-bold">What does the bar graph mean?</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-3 stack-small-vspace-xs">
+            <img class="modal-img" src="http://placehold.it/80x80">
+          </div>
+          <div class="col-sm-9">
+            <p>Your scores for each category are obtained by examining all of your DNA markers and scoring their contribution to each athletic category using our algorithm. The score describes how favourable your genetics are at each of the tested markers for an athletic category.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;i class=&quot;entypo-help-circled question-clickable js-question-help&quot; data-toggle=&quot;modal&quot; data-target=&quot;#js-performance-scores-help&quot;&gt;&lt;/i&gt;
+
+&lt;div class=&quot;modal fade&quot; id=&quot;js-performance-scores-help&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&lt;span class=&quot;modal-span-cross header-font&quot; aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;
+        &lt;h5 class=&quot;modal-title paragraph-font light-bold&quot;&gt;What does the bar graph mean?&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-sm-3 stack-small-vspace-xs&quot;&gt;
+            &lt;img class=&quot;modal-img&quot; src=&quot;http://placehold.it/80x80&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-sm-9&quot;&gt;
+            &lt;p&gt;Your scores for each category are obtained by examining all of your DNA markers and scoring their contribution to each athletic category using our algorithm. The score describes how favourable your genetics are at each of the tested markers for an athletic category.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-double" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-03-modals-01-double/01-molecules-03-modals-01-double.html" class="patternLink" data-patternpartial="molecules-double">Double</a></h2>
+						<div class="sg-pattern-body">
+							<button class="btn non-block green" data-toggle="modal" data-target="#23andMe-info">
+  <h6 class="white-text">
+    GET YOUR OWN
+  </h6>
+</button>
+
+<div class="modal fade in" id="23andMe-info" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog double-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span class="modal-span-cross" aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 stack-vspace-xs">
+            <div class="row">
+              <h5 class="modal-title paragraph-font light-bold text-center">
+                Order a DNA test
+              </h5>
+              <hr class="visible-xs nospace">
+            </div>
+            <div class="row vspace text-center">
+              <img src="http://placehold.it/80x80">
+            </div>
+            <div class="row vspace">
+              <div class="col-xs-12">
+                <p class="modal-text">
+                  You need a DNA test to get your Athletigen profile. 
+                  We've affiliated with 23andMe to offer our 
+                  customers DNA testing. 
+                </p>
+              </div>
+            </div>
+            <div class="row small-vspace text-center">
+              <a target="_blank" href="https://www.23andme.com">
+                <button class="btn non-block green">
+                  <h6 class="white-text">
+                     ORDER A TEST
+                  </h6>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="vertical-line hidden-xs">
+          </div>
+          <div class="col-sm-6 col-xs-12 stack-vspace-xs">
+            <div class="row">
+              <h5 class="modal-title paragraph-font light-bold text-center">
+                Transfer data from 23andMe
+              </h5>
+              <hr class="visible-xs nospace">
+            </div>
+            <div class="row vspace text-center">
+              <img src="http://placehold.it/80x80">
+            </div>
+            <div class="row vspace">
+              <div class="col-xs-12">
+                <p class="modal-text">
+                  You can transfer your genetic data from our 
+                  affiliate, 23andMe, to get your own Athletigen 
+                  profile.
+                </p>
+              </div>
+            </div>
+            <div class="row small-vspace text-center">
+              <form method="get" action="https://api.23andme.com/authorize/">
+            		<input type="hidden" name="redirect_uri" value="http://localhost:8080/zeuswebapp/app/connect23andme">
+            		<input type="hidden" name="response_type" value="code">
+            		<input type="hidden" name="client_id" value="41516b8e4ecfe39db6c04e3847a4c0e1">
+            		<input type="hidden" name="scope" value="names genomes basic ">
+            			<button type="submit" class="btn non-block green">
+    	            <h6 class="white-text">TRANSFER DATA</h6>
+    	          </button>
+            	</form>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;button class=&quot;btn non-block green&quot; data-toggle=&quot;modal&quot; data-target=&quot;#23andMe-info&quot;&gt;
+  &lt;h6 class=&quot;white-text&quot;&gt;
+    GET YOUR OWN
+  &lt;/h6&gt;
+&lt;/button&gt;
+
+&lt;div class=&quot;modal fade in&quot; id=&quot;23andMe-info&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog double-modal&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&lt;span class=&quot;modal-span-cross&quot; aria-hidden=&quot;true&quot;&gt;&times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-sm-6 col-xs-12 stack-vspace-xs&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;h5 class=&quot;modal-title paragraph-font light-bold text-center&quot;&gt;
+                Order a DNA test
+              &lt;/h5&gt;
+              &lt;hr class=&quot;visible-xs nospace&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row vspace text-center&quot;&gt;
+              &lt;img src=&quot;http://placehold.it/80x80&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row vspace&quot;&gt;
+              &lt;div class=&quot;col-xs-12&quot;&gt;
+                &lt;p class=&quot;modal-text&quot;&gt;
+                  You need a DNA test to get your Athletigen profile. 
+                  We've affiliated with 23andMe to offer our 
+                  customers DNA testing. 
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row small-vspace text-center&quot;&gt;
+              &lt;a target=&quot;_blank&quot; href=&quot;https://www.23andme.com&quot;&gt;
+                &lt;button class=&quot;btn non-block green&quot;&gt;
+                  &lt;h6 class=&quot;white-text&quot;&gt;
+                     ORDER A TEST
+                  &lt;/h6&gt;
+                &lt;/button&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;vertical-line hidden-xs&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;col-sm-6 col-xs-12 stack-vspace-xs&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;h5 class=&quot;modal-title paragraph-font light-bold text-center&quot;&gt;
+                Transfer data from 23andMe
+              &lt;/h5&gt;
+              &lt;hr class=&quot;visible-xs nospace&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row vspace text-center&quot;&gt;
+              &lt;img src=&quot;http://placehold.it/80x80&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row vspace&quot;&gt;
+              &lt;div class=&quot;col-xs-12&quot;&gt;
+                &lt;p class=&quot;modal-text&quot;&gt;
+                  You can transfer your genetic data from our 
+                  affiliate, 23andMe, to get your own Athletigen 
+                  profile.
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row small-vspace text-center&quot;&gt;
+              &lt;form method=&quot;get&quot; action=&quot;https://api.23andme.com/authorize/&quot;&gt;
+            		&lt;input type=&quot;hidden&quot; name=&quot;redirect_uri&quot; value=&quot;http://localhost:8080/zeuswebapp/app/connect23andme&quot;&gt;
+            		&lt;input type=&quot;hidden&quot; name=&quot;response_type&quot; value=&quot;code&quot;&gt;
+            		&lt;input type=&quot;hidden&quot; name=&quot;client_id&quot; value=&quot;41516b8e4ecfe39db6c04e3847a4c0e1&quot;&gt;
+            		&lt;input type=&quot;hidden&quot; name=&quot;scope&quot; value=&quot;names genomes basic &quot;&gt;
+            			&lt;button type=&quot;submit&quot; class=&quot;btn non-block green&quot;&gt;
+    	            &lt;h6 class=&quot;white-text&quot;&gt;TRANSFER DATA&lt;/h6&gt;
+    	          &lt;/button&gt;
+            	&lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="molecules-login" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-00-login/01-molecules-04-forms-00-login.html" class="patternLink" data-patternpartial="molecules-login">Login</a></h2>
 						<div class="sg-pattern-body">
@@ -1308,94 +1544,6 @@
     &lt;/div&gt;
 
   &lt;/form:form&gt;
-
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-					<div id="molecules-one-line" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-02-one-line/01-molecules-04-forms-02-one-line.html" class="patternLink" data-patternpartial="molecules-one-line">One Line</a></h2>
-						<div class="sg-pattern-body">
-							<div class="col-xs-10 col-xs-offset-1 vspace"style="padding: 5px; background-color: #666;">
-  <form id="coachEarlyRegistrationForm" name="coachEarlyRegistrationForm" class="to-be-validated-one-line" action="/zeuswebapp/app/coach/early-registration?execution=e2s1" method="post" novalidate="novalidate">
-      
-    <div class="row one-line-form round">
-      
-        <input type="text" tabindex="1" class="form-control small-button " name="emailAddress" id="emailAddress" placeholder="Your Email Address" autocomplete="on" required="true" email="true" value="">
-       
-       <button name="_eventId_submit" type="submit" id="js-button-checkbox-button-show" class="btn non-block green small one-line-form-button" style="display: none;">
-          <h6 class="small white-text">
-            SUBSCRIBE
-          </h6>
-        </button>
-        <button id="js-button-checkbox-button-hide" type="button" class="btn non-block gray one-line-form-button small" style="display: block;">
-          <h6 class="small white-text">
-            SUBSCRIBE
-          </h6>
-        </button>
-    </div>
-    
-    <input type="hidden" name="_flowExecutionKey" cssclass="" value="e2s1"> 
-    
-    
-    <div class="row js-button-checkbox-check">
-      
-      
-        <input id="consent-checkbox" class="js-button-checkbox-check" name="consent" required="true" type="checkbox"> 
-      
-      
-      <label for="consent-checkbox">
-        <div class="new-checkbox"><i class="entypo-check white-text"></i></div>
-        <p class="small white-text"> I consent to receive e-mails from Athletigen.</p>
-      </label> 
-      
-      
-    </div>
-  </form>
-</div>
-
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;div class=&quot;col-xs-10 col-xs-offset-1 vspace&quot;style=&quot;padding: 5px; background-color: #666;&quot;&gt;
-  &lt;form id=&quot;coachEarlyRegistrationForm&quot; name=&quot;coachEarlyRegistrationForm&quot; class=&quot;to-be-validated-one-line&quot; action=&quot;/zeuswebapp/app/coach/early-registration?execution=e2s1&quot; method=&quot;post&quot; novalidate=&quot;novalidate&quot;&gt;
-      
-    &lt;div class=&quot;row one-line-form round&quot;&gt;
-      
-        &lt;input type=&quot;text&quot; tabindex=&quot;1&quot; class=&quot;form-control small-button &quot; name=&quot;emailAddress&quot; id=&quot;emailAddress&quot; placeholder=&quot;Your Email Address&quot; autocomplete=&quot;on&quot; required=&quot;true&quot; email=&quot;true&quot; value=&quot;&quot;&gt;
-       
-       &lt;button name=&quot;_eventId_submit&quot; type=&quot;submit&quot; id=&quot;js-button-checkbox-button-show&quot; class=&quot;btn non-block green small one-line-form-button&quot; style=&quot;display: none;&quot;&gt;
-          &lt;h6 class=&quot;small white-text&quot;&gt;
-            SUBSCRIBE
-          &lt;/h6&gt;
-        &lt;/button&gt;
-        &lt;button id=&quot;js-button-checkbox-button-hide&quot; type=&quot;button&quot; class=&quot;btn non-block gray one-line-form-button small&quot; style=&quot;display: block;&quot;&gt;
-          &lt;h6 class=&quot;small white-text&quot;&gt;
-            SUBSCRIBE
-          &lt;/h6&gt;
-        &lt;/button&gt;
-    &lt;/div&gt;
-    
-    &lt;input type=&quot;hidden&quot; name=&quot;_flowExecutionKey&quot; cssclass=&quot;&quot; value=&quot;e2s1&quot;&gt; 
-    
-    
-    &lt;div class=&quot;row js-button-checkbox-check&quot;&gt;
-      
-      
-        &lt;input id=&quot;consent-checkbox&quot; class=&quot;js-button-checkbox-check&quot; name=&quot;consent&quot; required=&quot;true&quot; type=&quot;checkbox&quot;&gt; 
-      
-      
-      &lt;label for=&quot;consent-checkbox&quot;&gt;
-        &lt;div class=&quot;new-checkbox&quot;&gt;&lt;i class=&quot;entypo-check white-text&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-        &lt;p class=&quot;small white-text&quot;&gt; I consent to receive e-mails from Athletigen.&lt;/p&gt;
-      &lt;/label&gt; 
-      
-      
-    &lt;/div&gt;
-  &lt;/form&gt;
-&lt;/div&gt;
 
 									</code>
 								</pre>
@@ -2431,10 +2579,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1413908755">
+	<script id="pl-js-polyfill-insert-1413918694">
 		(function() {
 			if (self != top) {
-				var cb = '1413908755';
+				var cb = '1413918694';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -2443,10 +2591,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1413908755">
+	<script id="pl-js-insert-1413918694">
 		(function() {
 			if (self != top) {
-				var cb = '1413908755';
+				var cb = '1413918694';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
