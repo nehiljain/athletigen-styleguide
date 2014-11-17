@@ -1,83 +1,84 @@
- <form:form  method="post" name="signupForm" modelAttribute="signupForm" cssClass="to-be-validated"  action="${tlibfn:rewrite(flowExecutionUrl, pageContext.request, settings['webapp_path'])}">
-    <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" /> 
-    
-    <spring:hasBindErrors name="signupForm">
-    <form:errors element="div" cssClass="small error form-error" />
-  </spring:hasBindErrors>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 auth-container sign-up">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6 col-lg-offset-1 text-center auth-infographic hidden-xs">
+            <h5 class="green-text">
+              Discover How Your Genetics Affect Your Athletic&nbsp;Performance</h5>
+          </div>
 
-    <div class="form-input wide">
-       <spring:bind path="emailAddress">
-       <input type="text" 
-          tabindex="1"
-            class="form-control ${status.error ? 'small error' : ''}" 
-            name="emailAddress" 
-            id="emailAddress" 
-            placeholder="Email" 
-            autocomplete="on" 
-            email="true"
-            required="true"
-            value="${signupForm.emailAddress}" />
-</spring:bind>
+          <div class="col-sm-6 col-sm-offset-6">
+            <div class="row small-vspace">
+              <div class="col-lg-1 col-md-1 col-sm-1"></div>
+              <div class="col-lg-10 col-md-10 col-sm-10">
+              
+              
+                <form id="signupForm" name="signupForm" class="to-be-validated" action="/zeuswebapp/app/account/new?execution=e9s1" method="post" novalidate="novalidate">
+                  <input type="hidden" name="_flowExecutionKey" value="e9s1"> 
+                    
+                  
+                 <div class="row tiny-vspace">
+                   <div class="form-input">
+                     
+                     <input type="text" tabindex="1" class="form-control " name="emailAddress" id="emailAddress" placeholder="Email" autocomplete="on" email="true" required="true" value="">
+					            
 
-      <form:errors path="emailAddress" element="div" cssClass="small error" />
-    </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row tiny-vspace">
+                    <div class="form-input">
+                    	
+                    	 <input type="password" tabindex="2" class="form-control " name="password" required="true" id="password" placeholder="Password (minimum 6 characters)" value="" data-validate="required" autocomplete="off">
+                      
+                                
+					             
+                    </div>
+                  </div>
+                  <div class="row tiny-vspace">
+                    <div class="form-input">
+                    	
+          							<input type="password" tabindex="3" class="form-control " required="true" name="passwordConfirmation" id="passwordConfirmation" placeholder="Confirm your password" value="" data-validate="required" autocomplete="off">
+					            
+					
+					            
+                    </div>
+                  </div>
 
-    <div class="form-input wide">
-      <spring:bind path="password">
-       <input type="password" 
-        tabindex="2"
-          class="form-control ${status.error ? 'small error' : ''}" 
-          name="password" 
-          required="true"
-          id="password"   
-          required="true"
-          placeholder="Password (minimum 6 characters)"
-          value="${signupForm.password}"
-          data-validate="required" 
-          autocomplete="off" />
-      </spring:bind>
-                
-    <form:errors path="password" element="div" cssClass="small error" /> 
-    </div>
-
-    <div class="form-input wide tiny-vspace">
-      <spring:bind path="passwordConfirmation">
-        <input type="password" 
-          tabindex="3"
-            class="form-control ${status.error ? 'small error' : ''}" 
-            required="true"
-            name="passwordConfirmation" 
-            id="passwordConfirmation"   
-            required="true"
-            placeholder="Confirm your password" 
-            value="${signupForm.passwordConfirmation}"
-            data-validate="required"
-            autocomplete="off" />
-      </spring:bind>
-      
-      <form:errors path="passwordConfirmation" element="div" cssClass="small error" />
-    </div>
-    
-    <div class="row">
-      <p class="small text-center form-text">
-        By clicking "Sign Up", you confirm that you accept our 
-        <strong><a class="no-underline" target="_blank" href="${settings['webapp_path']}/legal/privacy">
-          Privacy Policy
-        </a></strong>
-       and 
-        <strong><a class="no-underline" target="_blank" href="${settings['webapp_path']}/legal/terms">
-          Terms of Service</a></strong>.
-      </p>
-    </div>
-    <div class="row form-button tiny-vspace">
-      <button name="_eventId_submit" type="submit" class="btn btn-block green square">
-        <h6 class="white-text small">
-          SIGN UP
-        </h6>
-      </button>
-    </div>
-    <div class="text-center">
-        <span class="form-option small">or <strong><a href="${settings['webapp_path']}/secure/landing">Log In</a></strong></span>
-    </div>
-
-  </form:form>
+                  
+                  
+                  <div class="row tiny-vspace js-button-checkbox-check">
+                    
+                      <input id="consent-checkbox" name="newsletterConsent" class="js-button-checkbox-check" type="checkbox"> 
+                    
+                    
+                    <label for="consent-checkbox">
+                      <div class="new-checkbox"><i class="entypo-check white-text"></i></div>
+                      <p class="small">I consent to receive email newsletters from&nbsp;Athletigen.</p>
+                    </label> 
+                  </div>
+                  
+                  <div class="row tiny-vspace">
+  				    <div class="checkbox-spacer"></div>
+                    <p class="small text-center form-text">
+                      By clicking "Sign Up", you confirm that you accept our 
+                      <strong><a class="no-underline" target="_blank" href="/zeuswebapp/app/legal/privacy">
+                        Privacy Policy
+                      </a></strong>
+                      and 
+                      <strong><a class="no-underline" target="_blank" href="/zeuswebapp/app/legal/terms">
+                        Terms of Service</a></strong>. We’ll send you a link to confirm your email&nbsp;address.</p>
+                  </div>
+                  <div class="row tiny-vspace">
+                    <button name="_eventId_submit" type="submit" class="btn btn-block green small">
+                      <h6 class="white-text small">
+                        SIGN&nbsp;UP</h6>
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <span class="form-option small">or <strong><a href="/zeuswebapp/app/secure/landing">Log In</a></strong></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -1,37 +1,40 @@
-<form:form name="loginForm" modelAttribute="loginForm" method="post" cssClass="to-be-validated" action="${tlibfn:rewrite(flowExecutionUrl, pageContext.request, settings['webapp_path'])}">
-  <input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" />
-  
-  <div class="form-input wide tiny-vspace">
-    <input name="username" id="username" type="text"
-      tabindex="1"
-      value="${loginForm.username}"
-      placeholder="Email" 
-      required="true"
-      email="true"
-      autocomplete="on" class="form-control ${status.error ? 'small error' : ''}" />
-        
-    <form:errors path="username" element="div" cssClass="small error" />
-  </div>
-
-  <div class="form-input wide tiny-vspace">
-    <input name="password" id="password" type="password"
-      tabindex="2"
-        class="form-control ${status.error ? 'small error' : ''}" 
-        required="true"
-        placeholder="Password"
-        autocomplete="off" />
-    <form:errors path="password" element="div" cssClass="small error" />
-  </div>
-  
-   <div class="row form-button">
-    <button name="_eventId_submit" type="submit" class="btn btn-block green square small-vspace"> 
-      <h6 class="white-text small">
-        LOG IN
-      </h6>
-    </button>
-  </div>
-  <div class="form-text text-center">
-    <span class="small"><strong><a href="${settings['webapp_path']}/account/settings/password/forgot">Forgot Password?</a></strong> 
-    or <strong><a href="${settings['webapp_path']}/account/new" class="js-direct-to-no">Sign Up</a></strong></span>
-  </div>
-</form:form>
+<div class="auth-container extra-vspace-bottom col-lg-6 col-md-8 col-sm-10 col-xs-10">
+        <div class="row vspace">
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <form id="loginForm" name="loginForm" class="to-be-validated" action="/zeuswebapp/app/loginFlow?execution=e8s1" method="post" novalidate="novalidate">
+              <input type="hidden" name="_flowExecutionKey" value="e8s1">
+              
+               
+              <div class="row tiny-vspace">
+                <div class="form-input">
+                	
+                    <input name="username" id="username" type="text" tabindex="1" value="" placeholder="Email" required="true" email="true" autocomplete="on" class="form-control ">
+                      
+                   
+                  
+                </div>
+              </div>
+              <div class="row tiny-vspace">
+                <div class="form-input">
+                	
+                      <input name="password" id="password" type="password" tabindex="2" class="form-control " required="true" placeholder="Password" autocomplete="off">
+				        
+                  
+                </div>
+              </div>
+              
+              <div class="row form-button tiny-vspace">
+                <button name="_eventId_submit" type="submit" class="btn btn-block green small"> 
+                  <h6 class="white-text small">
+                    LOG&nbsp;IN</h6>
+                </button>
+              </div>
+              <div class="form-text text-center">
+                <span class="small"><strong><a href="/zeuswebapp/app/account/settings/password/forgot">Forgot Password?</a></strong> 
+                or <strong><a href="/zeuswebapp/app/account/new" class="js-direct-to-no">Sign Up</a></strong></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>

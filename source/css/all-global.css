@@ -5452,46 +5452,51 @@ p small, .p.small, .p.small.unresponsive {
 
 /* line 88, ../../scss/global/partials/_fonts.scss */
 .light-bold {
+  font-weight: 300;
+}
+
+/* line 93, ../../scss/global/partials/_fonts.scss */
+.semi-bold {
   font-weight: 600;
 }
 
-/* line 92, ../../scss/global/partials/_fonts.scss */
+/* line 97, ../../scss/global/partials/_fonts.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 96, ../../scss/global/partials/_fonts.scss */
+/* line 101, ../../scss/global/partials/_fonts.scss */
 .extra-bold {
   font-weight: 800;
 }
 
-/* line 101, ../../scss/global/partials/_fonts.scss */
+/* line 106, ../../scss/global/partials/_fonts.scss */
 .text-normal-wrap {
   white-space: normal;
   word-wrap: normal;
 }
 
-/* line 107, ../../scss/global/partials/_fonts.scss */
+/* line 112, ../../scss/global/partials/_fonts.scss */
 .lighter-text, .text-lighter {
   color: #606e7d;
 }
 
-/* line 111, ../../scss/global/partials/_fonts.scss */
+/* line 116, ../../scss/global/partials/_fonts.scss */
 text.text-lighter {
   fill: #606e7d;
 }
 
-/* line 116, ../../scss/global/partials/_fonts.scss */
+/* line 121, ../../scss/global/partials/_fonts.scss */
 .text-white, .white-text {
   color: white;
 }
 
-/* line 121, ../../scss/global/partials/_fonts.scss */
+/* line 126, ../../scss/global/partials/_fonts.scss */
 text.text-white, text.white-text {
   fill: white;
 }
 
-/* line 125, ../../scss/global/partials/_fonts.scss */
+/* line 130, ../../scss/global/partials/_fonts.scss */
 .text-green, .green-text {
   color: #2bab6e;
 }
